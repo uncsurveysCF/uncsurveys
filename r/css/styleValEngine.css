@@ -1,0 +1,103 @@
+/* # Validation engine (form validation)
+================================================== */
+
+.formError { z-index: 990; }
+.formError .formErrorContent { z-index: 991; line-height: 20px; }
+.formError .formErrorArrow { z-index: 996; }
+.formErrorInsideDialog.formError { z-index: 5000; }
+.formErrorInsideDialog.formError .formErrorContent { z-index: 5001; }
+.formErrorInsideDialog.formError .formErrorArrow { z-index: 5006; }
+.inputContainer { position: relative; float: left; }
+.formError { position: absolute; top: 300px; left: 300px; display: block; cursor: pointer; }
+.ajaxSubmit { padding: 20px; background: #55ea55; border: 1px solid #999; display: none }
+
+@-webkit-keyframes error-stripes {
+  from {
+    background-position: 25px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes error-stripes {
+  from {
+    background-position: 25px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes error-stripes {
+  from {
+    background-position: 25px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes error-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 25px 0;
+  }
+}
+
+@keyframes error-stripes {
+  from {
+    background-position: 25px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+
+.formError .formErrorContent { width: 100%; position:relative; color: #fff; width: 150px; font-size: 11px; text-shadow: 0 1px 0 rgba(0,0,0,0.3); padding: 6px 10px; text-align: center;
+
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+
+    background-color: #cf432c;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.05)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.05)), color-stop(0.75, rgba(255, 255, 255, 0.05)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 25px 25px;
+     -moz-background-size: 10px 25px;
+       -o-background-size: 25px 25px;
+          background-size: 25px 25px;
+
+  -webkit-animation: error-stripes 1s linear infinite;
+   -moz-animation: error-stripes 1s linear infinite;
+    -ms-animation: error-stripes 1s linear infinite;
+     -o-animation: error-stripes 1s linear infinite;
+        animation: error-stripes 1s linear infinite;
+
+}
+
+.greenPopup .formErrorContent { background: #7fba4a; }
+.blackPopup .formErrorContent { background: #393939; color: #FFF; }
+.formError .formErrorArrow { width: 15px; left: 14px; margin-top: -3px; position:relative; }
+body[dir='rtl'] .formError .formErrorArrow, body.rtl .formError .formErrorArrow { margin: -2px 13px 0 0; }
+.formError .formErrorArrowBottom { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; margin: 0px 0 0 12px; top:2px; }
+.formError .formErrorArrow div { font-size: 0px; height: 1px; background: #cf432c; margin: 0 auto; line-height: 0; font-size: 0; display: block; }
+.formError .formErrorArrowBottom div { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+.greenPopup .formErrorArrow div { background: #33be40; }
+.blackPopup .formErrorArrow div { background: #393939; color: #FFF; }
+.formError .formErrorArrow .line10 { width: 15px; border: none; }
+.formError .formErrorArrow .line9 { width: 13px; border: none; }
+.formError .formErrorArrow .line8 { width: 11px; }
+.formError .formErrorArrow .line7 { width: 9px; }
+.formError .formErrorArrow .line6 { width: 7px; }
+.formError .formErrorArrow .line5 { width: 5px; }
+.formError .formErrorArrow .line4 { width: 3px; }
+.formError .formErrorArrow .line3 { width: 1px; }
+.formError .formErrorArrow .line2 { width: 3px; border: none; background: none; }
+.formError .formErrorArrow .line1 { width: 1px; border: none; background: none; }
