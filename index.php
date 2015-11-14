@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <title>UNCSurvey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Encuestas,Survey">
+    <meta name="description" content="Encuestas,Surveys">
     <meta name="author" content="Roa Silvina">
 
     <!-- The styles -->

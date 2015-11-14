@@ -38,13 +38,18 @@ UNCSurveys implementa el análisis de encuestas usando R.
 
 
 INSTALACIÓN DE INTERPRETE DE R EN UBUNTU
+
 sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)/"
+
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+
 sudo apt-get update
+
 sudo apt-get install r-base r-base-dev
 
 
 INSTALACIÓN DE PAQUETE RMySQL
+
 sudo apt-get install r-cran-rmysql
 
 OTROS PARAMETROS A CONFIGURAR
