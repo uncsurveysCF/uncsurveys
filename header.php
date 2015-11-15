@@ -1,4 +1,5 @@
-<?php include 'config.php';
+<?php 
+include 'config.php';
 require_once("libs/Login.php");
 $oLogin=new Login();
 if(!$oLogin->activa()){
@@ -9,11 +10,8 @@ $nomUsuario = $oLogin->getNombreUsuario();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-        ===
-        This comment should NOT be removed.
-
-        Charisma v2.0.0
+    <!--   ===
+        This comment should NOT be removed.Charisma v2.0.0
 
         Copyright 2012-2014 Muhammad Usman
         Licensed under the Apache License v2.0
@@ -26,8 +24,8 @@ $nomUsuario = $oLogin->getNombreUsuario();
     <meta charset="utf-8">
     <title>UNCSurveys</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Desarrollo de encuestas. Surveys">
+    <meta name="author" content="Roa Silvina">
 
     <!-- The styles -->
     <link id="bs-css" href="css/bootstrap-simplex.min.css" rel="stylesheet">
